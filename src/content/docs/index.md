@@ -1,18 +1,33 @@
 ---
 title: Capabilities for Coders
 description: TODO
+template: splash
+hero:
+  tagline: all you wanted to know about capabilities but were afraid to ask
+  image:
+    file: ../../assets/cherry_bakewell.png
+  actions:
+    - text: What is CHERI?
+      link: /cheri/what-is-cheri/
+      icon: right-arrow
 ---
 
-::: {.toctree maxdepth="2" caption="Contents:"}
+<!-- TODO fix this -->
+
+<!-- ::: {.toctree maxdepth="2" caption="Contents:"}
 about faq/index compartmentalisation/index capabilities/index
 compiler_errors/index
-:::
+::: -->
 
-## YouTube playlist
+## Other resources:
+
+---
+
+### YouTube playlist
 
 <iframe src="https://www.youtube.com/embed/videoseries?list=PLilv37aq2fhSgAtn6qjdv43qocxwiVrMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Podcast series
+### Podcast series
 
 In the _Capabilities for Coders_ podcast, Jeremy interviews some of the
 key figures in the CHERI world.
@@ -41,7 +56,3 @@ Podcasts\]](https://podcasts.apple.com/gb/podcast/capabilities-for-coders/id1677
 [\[Amazon
 Podcasts\]](https://music.amazon.co.uk/podcasts/2962dbd2-03f3-436f-b5cc-a173a97ff4c9/capabilities-for-coders)
 [\[Spotify\]](https://open.spotify.com/show/7Bb9dBEriANYNcO5IdljOS?si=73201138446a46c8)
-
-## Search docs
-
-- `search`{.interpreted-text role="ref"}
