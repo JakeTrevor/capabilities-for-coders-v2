@@ -4,7 +4,7 @@ description: TODO
 ---
 
 This page deals with _purecap_ compilation for native capability code.
-There is a separate page for [\*hybrid\* compilation](https://capabilitiesforcoders.com/faq/compiling_hybrid.html).
+There is a separate page for [\*hybrid\* compilation](/cheri/compiling/hybrid).
 
 If you have access to Morello hardware, you can run the LLVM compiler natively on CheriBSD. You need to install llvm with pkg, then you can run it as you would on any other platform.
 
