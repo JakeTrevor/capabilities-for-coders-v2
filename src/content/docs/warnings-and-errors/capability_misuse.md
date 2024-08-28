@@ -15,7 +15,7 @@ warning message like this:
 then you probably have tried to compile code that looks something like
 this:
 
-```c {emphasize-lines="3"}
+```c {3}
 #include <stdint.h>
 
 void *foo(uint64_t value) {
