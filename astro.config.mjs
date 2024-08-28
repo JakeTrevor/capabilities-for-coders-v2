@@ -32,7 +32,11 @@ export default defineConfig({
             {
               collapsed: true,
               label: "Compiling for CHERI",
-              items: ["cheri/compiling/purecap", "cheri/compiling/hybrid"],
+              items: [
+                "cheri/compiling/cross-compiling",
+                "cheri/compiling/purecap",
+                "cheri/compiling/hybrid",
+              ],
             },
             "cheri/running",
             "cheri/header",

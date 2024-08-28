@@ -6,27 +6,6 @@ description: TODO
 This page deals with _purecap_ compilation for native capability code.
 There is a separate page for [\*hybrid\* compilation](https://capabilitiesforcoders.com/faq/compiling_hybrid.html).
 
-## Cross-compilation
-
-The LLVM compiler runs in cross-compilation mode for CHERI, so you can compile to CHERI targets from a non-CHERI platform like x86_64/linux. If you use cheribuild, then by default your CHERI LLVM toolchain will be located in the _cheri_ directory in your home directory. There is a configuration file with the relevant parameters set up to enable cross-compilation. One convenient way to invoke the cross-compiler is by defining appropriate environment variables:
-
-```bash
-export CC=~/cheri/output/morello-sdk/bin/clang
-export CFLAGS="--config cheribsd-morello-purecap.cfg"
-```
-
-You can then invoke the cross-compiler on your non-CHERI platform:
-
-```bash
-$CC $CFLAGS test.c
-```
-
-which will generate an `a.out` executable file that you can copy to a CHERI system to execute.
-
-Cross-compilation is most useful when you are running a CHERI emulator and the native CHERI compiler runs too slowly on the emulator.
-
-## Native compilation
-
 If you have access to Morello hardware, you can run the LLVM compiler natively on CheriBSD. You need to install llvm with pkg, then you can run it as you would on any other platform.
 
 ```bash
@@ -41,10 +20,11 @@ clang-morello -march=morello -mabi=purecap ./file.c
 
 You need to specify both the march and mabi flags explicitly for purecap mode.
 
-However, if you\'re using an old version of _clang-morello_ and trying to pass a capability pointer to a variadic function, such as _printf_, you might still encounter the
-_SIGPROT_ fault. 
+<!-- TODO should this really live in this file? -->
 
-Let's say we have the following code, where `my_func` is a variadic function that you\'d like to invoke with some capability pointers:
+However, if you're using an old version of _clang-morello_ and trying to pass a capability pointer to a variadic function, such as _printf_, you might still encounter the _SIGPROT_ fault.
+
+Let's say we have the following code, where `my_func` is a variadic function that you'd like to invoke with some capability pointers:
 
 ```c
 // variadic.c
