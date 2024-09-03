@@ -1,6 +1,6 @@
 ---
 title: What is the benchmark ABI for CHERI?
-description: TODO
+description: What is the benchmark ABI for CHERI?
 ---
 
 The _benchmark ABI_ is a special mode of CHERI code execution that
@@ -35,7 +35,5 @@ may be installed using the `pkg64cb` package management utility.
 
 ### More information
 
-- Tutorial page on [using the benchmark
-  ABI](https://www.cheribsd.org/tutorial/23.11/benchmark/index.html)
-- Advice about [performance reporting for
-  Morello](https://ctsrd-cheri.github.io/morello-early-performance-results/)
+- Tutorial page on [using the benchmark ABI](https://www.cheribsd.org/tutorial/23.11/benchmark/index.html)
+- Advice about [performance reporting for Morello](https://ctsrd-cheri.github.io/morello-early-performance-results/)

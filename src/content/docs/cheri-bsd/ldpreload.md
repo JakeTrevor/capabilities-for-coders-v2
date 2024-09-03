@@ -1,6 +1,6 @@
 ---
 title: How do I use the LD_PRELOAD trick for CheriBSD?
-description: TODO
+description: How do I use the LD_PRELOAD trick for CheriBSD?
 ---
 
 In common with other Unix variants, you can set the `LD_PRELOAD`

@@ -1,6 +1,6 @@
 ---
 title: How do I compile for Purecap CHERI?
-description: TODO
+description: How do I compile for purecap CHERI?
 ---
 
 This page deals with _purecap_ compilation for native capability code.

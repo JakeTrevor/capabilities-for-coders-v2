@@ -1,6 +1,6 @@
 ---
 title: Unclear provenance warning
-description: TODO
+description: Unclear provenance warning
 ---
 
 If you see a CHERI Clang/LLVM warning message like this:

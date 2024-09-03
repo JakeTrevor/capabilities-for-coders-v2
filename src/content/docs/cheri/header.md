@@ -1,6 +1,6 @@
 ---
 title: Which header file(s) should I include to use CHERI functions?
-description: TODO
+description: Which headers do I need to use CHERI?
 ---
 
 :::danger[TODO]

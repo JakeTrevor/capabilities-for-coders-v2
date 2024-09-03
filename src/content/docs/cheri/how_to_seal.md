@@ -1,6 +1,6 @@
 ---
 title: How do I seal a capability?
-description: TODO
+description: How do I seal a capability?
 ---
 
 One capability may be _sealed_ with another capability, using the `cheri_seal` CHERI macro. The first parameter of `cheri_seal` is the capability to be sealed. The second parameter is the capability we are using to perform the seal, analogous to the private key in a cryptographic signing operation. The result of successful `cheri_seal` is a sealed capability.

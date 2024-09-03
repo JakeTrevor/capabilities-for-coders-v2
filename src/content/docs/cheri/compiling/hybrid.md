@@ -1,11 +1,11 @@
 ---
 title: How do I compile for Hybrid CHERI?
-description: TODO
+description: How do I compile for native Hybrid CHERI
 ---
 
-If you want to generate _hybrid_ code for Morello, you can use a CHERI LLVM compiler but you need to specify the appropriate ABI flag.
+If you have access to Morello hardware, you can compile natively on CheriBSD. You need to install llvm with pkg, then you can run it as you would on any other platform.
 
-If you have access to Morello hardware, you can run the LLVM compiler natively on CheriBSD. You need to install llvm with pkg, then you can run it as you would on any other platform.
+If you want to generate _hybrid_ code for Morello, you can use a CHERI LLVM compiler, but you need to specify the appropriate ABI flag.
 
 ```bash
 pkg64 install llvm-morello

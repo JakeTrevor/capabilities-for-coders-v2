@@ -1,6 +1,6 @@
 ---
 title: How do I printf a capability value?
-description: TODO
+description: How do I printf a capability value?
 ---
 
 The `printf` function has been extended with support for displaying

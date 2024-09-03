@@ -1,6 +1,6 @@
 ---
 title: How do I use hardware performance counters on Morello with CheriBSD?
-description: TODO
+description: How do I use hardware performance counters on Morello with CheriBSD?
 ---
 
 Hardware performance counters are supported by the Arm Performance

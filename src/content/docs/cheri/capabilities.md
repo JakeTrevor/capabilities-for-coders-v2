@@ -1,6 +1,6 @@
 ---
 title: What is a CHERI capability?
-description: TODO
+description: What is a CHERI Capability?
 ---
 
 A capability is an unforgeable token of authority that grants particular rights to perform an action in an execution context.

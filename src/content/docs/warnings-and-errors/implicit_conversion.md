@@ -1,6 +1,6 @@
 ---
 title: Implicit conversion
-description: TODO
+description: Implicit conversion
 ---
 
 ## In Hybrid Mode

@@ -1,6 +1,6 @@
 ---
 title: How do I configure networking on CheriBSD?
-description: TODO
+description: How do I configure networking on CheriBSD?
 ---
 
 Once you have installed CheriBSD, you will need to configure the

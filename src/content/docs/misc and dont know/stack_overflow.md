@@ -1,6 +1,6 @@
 ---
 title: Stack Overflow Prevention
-description: TODO
+description: Stack Overflow Prevention
 ---
 
 ## Stack Overflow

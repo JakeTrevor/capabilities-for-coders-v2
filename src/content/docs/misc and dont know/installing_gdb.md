@@ -1,6 +1,6 @@
 ---
 title: How do I install gdb on Morello?
-description: TODO
+description: How do I install gdb on Morello?
 ---
 
 The GNU debugger gdb has been extended with support for CHERI
@@ -8,7 +8,7 @@ capabilities. There is a [github repo](https://github.com/CTSRD-CHERI/gdb).
 
 ## For native CheriBSD
 
-If you are using [pkg64]{.title-ref} there is a special CHERI-aware
+If you are using `pkg64` there is a special CHERI-aware
 version of gdb-cheri. This runs as a hybrid-mode executable on Morello
 CheriBSD.
 

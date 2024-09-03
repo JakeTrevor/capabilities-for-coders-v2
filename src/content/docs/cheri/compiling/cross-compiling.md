@@ -1,6 +1,6 @@
 ---
 title: Cross Compiling for CHERI
-description: TODO
+description: Cross compiling for CHERI
 ---
 
 ## Cheribuild LLVM

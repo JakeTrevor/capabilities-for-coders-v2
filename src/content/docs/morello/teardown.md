@@ -1,6 +1,6 @@
 ---
 title: How do I remove the motherboard from the Morello ATX case?
-description: TODO
+description: How do I remove the motherboard from the Morello ATX case?
 ---
 
 ## Open the case

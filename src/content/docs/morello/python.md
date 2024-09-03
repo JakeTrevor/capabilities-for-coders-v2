@@ -1,6 +1,6 @@
 ---
 title: Can I run Python code on Morello?
-description: TODO
+description: Can I run Python code on Morello?
 ---
 
 If you are running in hybrid mode, you can install the default CPython
@@ -58,12 +58,6 @@ unsafe [200] = 0x1f
 
 ## Further References:
 
-- Paper about [MicroPython port to
-  CHERI](https://eprints.gla.ac.uk/304475/) (published at ACM SIGPLAN
-  MPLR 2023 conference)
-- Paper about [optimizing MicroPython port to
-  CHERI](https://eprints.gla.ac.uk/305684/) (published at ACM SIGPLAN
-  VMIL 2023 workshop)
-- Documentation for [MicroPython
-  project](https://docs.micropython.org/en/latest/) (the most relevant
-  docs are for the Unix port))
+- Paper about [MicroPython port to CHERI](https://eprints.gla.ac.uk/304475/) (published at ACM SIGPLAN MPLR 2023 conference)
+- Paper about [optimizing MicroPython port to CHERI](https://eprints.gla.ac.uk/305684/) (published at ACM SIGPLAN VMIL 2023 workshop)
+- Documentation for [MicroPython project](https://docs.micropython.org/en/latest/) (the most relevant docs are for the Unix port))

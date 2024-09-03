@@ -1,6 +1,6 @@
 ---
 title: What are the purposes of sealed capabilities?
-description: TODO
+description: What are the purposes of sealed capabilities?
 ---
 
 :::danger[TODO]

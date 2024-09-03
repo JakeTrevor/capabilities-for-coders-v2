@@ -1,6 +1,6 @@
 ---
 title: Capability misuse
-description: TODO
+description: Capability misuse
 ---
 
 ## In Purecap Mode

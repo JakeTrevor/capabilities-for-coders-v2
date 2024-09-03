@@ -1,6 +1,6 @@
 ---
 title: About the project
-description: TODO
+description: About the project
 ---
 
 _Capabilities for Coders_ is a documentation and developer engagement

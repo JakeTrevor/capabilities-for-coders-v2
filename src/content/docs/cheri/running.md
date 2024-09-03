@@ -1,9 +1,12 @@
 ---
 title: How do I run CHERI programs?
-description: TODO
+description: How do I run CHERI  programs?
 ---
+
 There are two ways to run CHERI programs: either emulate a CHERI system, or run it on CHERI-native hardware.
+
 ## Emulation
+
 Cheribuild can build a full-system software emulator, running CheriBSD. To build a QEMU executable for Morello:
 
 ```bash

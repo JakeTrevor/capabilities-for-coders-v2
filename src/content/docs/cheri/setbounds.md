@@ -1,6 +1,6 @@
 ---
 title: How do I set the bounds for a capability value?
-description: TODO
+description: How do I set the bounds for a capability value?
 ---
 
 We can explicitly restrict the bounds of an existing capability by calling the `void *cheri_bounds_set(void *capability, size_t bounds)` macro function, available in the `<cheriintrin.h>` header.

@@ -1,6 +1,6 @@
 ---
 title: Morello Compartmentalisation
-description: TODO
+description: Morello Compartmentalisation
 ---
 
 Compartmentalisation can be used to isolate trusted and untrusted code

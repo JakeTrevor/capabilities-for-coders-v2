@@ -1,6 +1,6 @@
 ---
 title: How do I specify where shared object files are located?
-description: TODO
+description: How do I specify where shared object files are located?
 ---
 
 The `LD_LIBRARY_PATH` environment variable is used in CheriBSD, for

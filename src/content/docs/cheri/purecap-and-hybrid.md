@@ -1,7 +1,8 @@
 ---
 title: What are the Purecap and Hybrid Modes?
-description: TODO
+description: What are the Purecap and Hybrid Modes?
 ---
+
 ## Whats the difference between purecap and hybrid mode?
 
 There are two modes of execution for CHERI: _purecap_ and _hybrid_. For a _purecap_ executable, all memory references are represented as capability values. On the other hand, for a _hybrid_ executable, memory references are represented as raw pointers, i.e. the code is not capability-aware.
