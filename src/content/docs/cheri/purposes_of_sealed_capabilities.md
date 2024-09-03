@@ -2,8 +2,9 @@
 title: What are the purposes of sealed capabilities?
 description: TODO
 ---
+
 :::danger[TODO]
-Flaging this whole page for a prose review 
+Flaging this whole page for a prose review
 :::
 
 Sealed capabilities are a mechanism to allow a capability to be passed
@@ -11,15 +12,14 @@ between processes without the receiving process being able to forge a
 capability to the same object. They serve several purposes related to
 security and capability-based systems:
 
-###  Tamper-Proofing
+### Tamper-Proofing
 
 Sealed capabilities help protect against tampering or unauthorized
 modification of capabilities. Once a capability is sealed, its
 properties (such as permissions and bounds) are fixed, and any
 attempt to tamper with the capability will result in an invalid
-capability. We can validate it using `cheri_is_valid`. Alternatively, a
-trap will be raised if the program attempts to use the invalid
-capability. Please see the post [How do I seal a capability?](/cheri/how_to_seal)
+capability. Check a capability is valid using `cheri_is_valid`.
+Alternatively, if we try to use an invalid capability anyway, a trap will be raised. Please see the post [How do I seal a capability?](/cheri/how_to_seal)
 for more details.
 
 ### Code and Control Flow Integrity

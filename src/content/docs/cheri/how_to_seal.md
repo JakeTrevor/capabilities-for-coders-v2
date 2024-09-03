@@ -2,18 +2,14 @@
 title: How do I seal a capability?
 description: TODO
 ---
-:::danger[TODO]
-I think this page probably needs a review too.
-:::
 
-One capability may be _sealed_ with another capability, using the `cheri_seal` CHERI macro. The first parameter of `cheri_seal` is the capability to be sealed. The second parameter is the capability we are using to perform the seal, analogous to the private key in a cryptographic signing operation. The result of successful `cheri_seal` 
-is a sealed capability.
+One capability may be _sealed_ with another capability, using the `cheri_seal` CHERI macro. The first parameter of `cheri_seal` is the capability to be sealed. The second parameter is the capability we are using to perform the seal, analogous to the private key in a cryptographic signing operation. The result of successful `cheri_seal` is a sealed capability.
 
 The example code below uses the OS canonical sealing capability, `security.cheri.sealcap` which can be used to seal any valid capability value.
 
 ## Unsealing a capability
 
-Once a capability has been sealed, it cannot be dereferenced or modified. Effectively a sealed capability is immutable. The only valid operation we can perform is to unseal the capability, using the `cheri_unseal` macro.
+Once a capability has been sealed, it cannot be dereferenced or modified. A sealed capability is effectively immutable. The only valid operation we can perform is to unseal the capability, using the `cheri_unseal` macro.
 
 This is the dual of the `cheri_seal` macro above. With `cheri_unseal(x, y)`, `x` is the sealed capability we want to unseal, and `y` is the sealing capability (the same one that we used to perform the seal).
 
@@ -94,7 +90,7 @@ void untrusted_3rd_party_func(void * data) {
 }
 ```
 
-```{.bash emphasize-lines="7"}
+```bash {7}
 $ ./seal
 [main] buf: 0x40838000 [rwRW,0x40838000-0x40838020], valid: 1
 [main] sealer: 0x4 [,0x4-0x2000], valid: 1
@@ -118,7 +114,7 @@ void untrusted_3rd_party_func(void * data) {
 }
 ```
 
-```{.bash emphasize-lines="7"}
+```bash {7}
 $ ./seal
 [main] buf: 0x40838000 [rwRW,0x40838000-0x40838020], valid: 1
 [main] sealer: 0x4 [,0x4-0x2000], valid: 1
@@ -155,7 +151,7 @@ void * get_derived_sealer() {
 
 And now we can seal the secret with the derived sealer in the main function:
 
-``` c {6,24-25}
+```c {6,24-25}
 int main() {
   char * buf = get_secret();
   printf("[main] buf: %#p, valid: %d\n", buf, cheri_is_valid(buf));
@@ -187,7 +183,7 @@ void untrusted_3rd_party_func(void * data) {
 
 If we build and run the program now, the untrusted function won't be able to use the default root sealer to unseal the capability we passed to it, and result in a _SIGPROT_ fault:
 
-```{.bash emphasize-lines="6,10"}
+```bash {6,10}
 $ clang-morello -march=morello+c64 -mabi=purecap \
     -Xclang -morello-vararg=new \
     seal.c -o seal

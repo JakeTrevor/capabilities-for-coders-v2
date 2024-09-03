@@ -11,7 +11,7 @@ You can print the raw address in the capability with the `%p` specifier,
 or print the address plus pretty-printed metadata with the `%#p`
 variant.
 
-```{.C emphasize-lines="6-7"}
+```c {6-7}
 #include <stdio.h>
 #include <stdlib.h>
 

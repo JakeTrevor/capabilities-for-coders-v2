@@ -35,7 +35,7 @@ int main() {
 
 The monotonicity property of CHERI means we cannot set the bounds of a derived capability to be more permissive than the original capability.
 
-If we call [cheri_bounds_set]{.title-ref} and attempt to derive a more permissive capability, then the capability loses its validity tag, so if it is used in a dereferencing operation it will cause a SIGPROT error.
+If we call `cheri_bounds_set` and attempt to derive a more permissive capability, then the capability loses its validity tag, so if it is used in a dereferencing operation it will cause a SIGPROT error.
 
 The gdb single-step execution below illustrates this point:
 
