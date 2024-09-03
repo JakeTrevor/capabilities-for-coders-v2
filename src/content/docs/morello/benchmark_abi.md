@@ -3,6 +3,9 @@ title: What is the benchmark ABI for CHERI?
 description: What is the benchmark ABI for CHERI?
 ---
 
+<!-- TODO I beleive this is morello specific? from what duncan has said -->
+<!-- Something to do with branch predictors and capabilities being poorly optimised for that. -->
+
 The _benchmark ABI_ is a special mode of CHERI code execution that
 overcomes some Morello performance limitations. It should only be used
 for reporting experimental performance results, and such results should

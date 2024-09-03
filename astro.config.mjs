@@ -21,7 +21,13 @@ export default defineConfig({
       title: "Capabilities for Coders",
       logo: { src: "./src/assets/cherry_bakewell.png" },
       favicon: "/favicon-32x32.png",
-      social: { github: "https://github.com/withastro/starlight" },
+      social: {
+        github: "https://github.com/JakeTrevor/capabilities-for-coders-v2",
+      },
+      editLink: {
+        baseUrl:
+          "https://github.com/JakeTrevor/capabilities-for-coders-v2/edit/main",
+      },
       plugins: [starlightLinksValidator()],
       sidebar: [
         {
@@ -56,16 +62,26 @@ export default defineConfig({
             "morello/teardown",
             "morello/python",
             "morello/compartmentalisation",
+            "morello/benchmark_abi",
           ],
         },
         {
           label: "CheriBSD",
           items: [
+            "cheri-bsd/installing_gdb",
             "cheri-bsd/compile_on_freebsd",
             "cheri-bsd/configure_networking",
             "cheri-bsd/hardware_performance_counters",
             "cheri-bsd/ldpreload",
             "cheri-bsd/shared_library_path",
+          ],
+        },
+        {
+          label: "Warnings and Errors",
+          items: [
+            "warnings-and-errors/capability_misuse",
+            "warnings-and-errors/implicit_conversion",
+            "warnings-and-errors/unclear_provenance",
           ],
         },
       ],

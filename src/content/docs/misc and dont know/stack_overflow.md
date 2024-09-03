@@ -3,6 +3,8 @@ title: Stack Overflow Prevention
 description: Stack Overflow Prevention
 ---
 
+<!-- TODO Is this a warning/error? -->
+
 ## Stack Overflow
 
 Local variables are stored on the stack. The stack is a contiguous block
